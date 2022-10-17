@@ -1,25 +1,19 @@
+import "./Login.css";
 import * as React from "react";
-// import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
-// import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import Link from "@mui/material/Link";
-// import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-// import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-// import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
 import { IconButton, OutlinedInput } from "@mui/material";
 import { InputAdornment } from "@mui/material";
 import { MailOutlined, VisibilityOff } from "@mui/icons-material";
 import { Visibility } from "@mui/icons-material";
-
 import Image from '../images/login-top.png';
 import Image1 from '../images/login-bottom.png';   
-// import bar from '../images/Line.png';  
 import KeyIcon from '@mui/icons-material/Key';      
 
 const theme = createTheme();
@@ -33,12 +27,7 @@ const styles = {
       backgroundSize: "350px 170px"
   }
 };
-// const bar = {
-//   line: {
-//       backgroundImage: `url(${bar})`,
-  
-//   }
-// };
+
 const styless = {
   paperContainer: {
       // height: 1356,
@@ -52,13 +41,6 @@ const styless = {
       backgroundPosition: "bottom"
   }
 };
-// const stylesss = {
-//   paperContainer: {
-//       // height: 1356,
-//       backgroundImage: `url(${Image2})`,
-//       backgroundRepeat: 'no-repeat'
-//   }
-// };
 
 export default function Login() {
   const handleSubmit = (event) => {
@@ -113,14 +95,14 @@ export default function Login() {
             backgroundColor: "#345B83",
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              alignItems: "flex-end",
-              flexDirection: "column",
-              padding: "0px 40px",
-              margin: "37px"
-            }}
+          <div className="girdOne"
+            // style={{
+            //   display: "flex",
+            //   alignItems: "flex-end",
+            //   flexDirection: "column",
+            //   padding: "0px 40px",
+            //   margin: "37px"
+            // }}
           >
             <img
               style={{
@@ -129,7 +111,7 @@ export default function Login() {
               src={require("../images/logo.png")}
             />
 
-            <p
+            <p className="test"
               style={{
                 fontWeight: "700",
                 fontSize: "50px",
