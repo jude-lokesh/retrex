@@ -3,3 +3,18 @@ ThemeProvider{
     font-family: 'Poppins', sans-serif !important;
 
 }
+.girdOne{
+        display:flex;
+        align-items: flex-end;
+        flex-direction: column;
+        padding: 0px 40px;
+        margin: 37px
+}
+@media only screen and (max-width: 1360px){
+    .girdOne{ 
+        flex-direction:row;
+        padding: 0px 40px;
+        margin: 3px
+}
+
+}
